@@ -3,7 +3,8 @@ $links = [
     ['text' => 'Home',     'href' => '#home'],
     ['text' => 'Services', 'href' => '#services'],
     ['text' => 'About',    'href' => '#about'],
-    ['text' => 'Contact',  'href' => '#contact'],     
+    ['text' => 'Contact',  'href' => '#contact'],
+    ['text' => 'Blog',     'href' => 'blog.php'],      
 
 ] ; ?>
 
