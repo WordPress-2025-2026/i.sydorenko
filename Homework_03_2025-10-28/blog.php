@@ -18,6 +18,7 @@
                 <p>Latest news, tips, and updates from Serenity Spa</p>
             </div>
         </section>
+        
         <section class="blog-posts">
             <h2>Recent Posts</h2>
             <article class="blog-post">
