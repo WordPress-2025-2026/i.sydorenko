@@ -98,15 +98,15 @@
 			<div class="stat-cards">
 				<div class="card">
 					<h2>Середня зарплата</h2>
-					<p><?= /* TODO: вивести $avg_salary */ '45 000 грн' ?></p>
+					<p><?= $avg_salary . ' грн' ?></p>
 				</div>
 				<div class="card">
 					<h2>Мінімальна зарплата</h2>
-					<p><?= /* TODO: вивести $min_salary */ '38 000 грн' ?></p>
+					<p><?= $min_salary . ' грн' ?></p>
 				</div>
 				<div class="card">
 					<h2>Максимальна зарплата</h2>
-					<p><?= /* TODO: вивести $max_salary */ '61 000 грн' ?></p>
+					<p><?= $max_salary . ' грн' ?></p>
 				</div>
 			</div>
 
