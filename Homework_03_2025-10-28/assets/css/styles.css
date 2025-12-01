@@ -85,6 +85,117 @@ nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
+/* Blog Page Styles */
+.blog-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('/assets/images/hero-spa.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+}
+
+.blog-hero .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.blog-posts {
+    max-width: 900px;
+    margin: 3rem auto 0;
+    padding: 0 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.blog-post {
+    display: flex;
+    align-items: stretch;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(44, 62, 80, 0.08);
+    transition: box-shadow 0.3s;
+    overflow: hidden;
+    min-height: 220px;
+}
+
+.blog-post.even {
+    flex-direction: row-reverse;
+}
+
+.blog-post-image {
+    width: 270px;
+    min-width: 180px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-post-content {
+    padding: 2rem 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.blog-post-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.blog-date, .blog-author {
+    font-size: 0.95rem;
+    color: #e67e22;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.blog-author {
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.blog-post-content p {
+    color: #555;
+    margin-bottom: 1.2rem;
+    font-size: 1.07rem;
+    line-height: 1.6;
+}
+
+.blog-post-content .cta-button {
+    width: fit-content;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .blog-post {
+        flex-direction: column;
+        min-height: unset;
+    }
+    .blog-post.even {
+        flex-direction: column;
+    }
+    .blog-post-image {
+        width: 100%;
+        max-height: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-hero {
+        padding: 4rem 1rem 2rem;
+    }
+    .blog-posts {
+        padding: 0 1rem 2rem;
+    }
+    .blog-post-content {
+        padding: 1.2rem 1rem 1rem;
+    }
+}
+
 /* Buttons */
 .cta-button {
     display: inline-block;
@@ -308,4 +419,4 @@ footer {
     .about-content img {
         height: 300px;
     }
-} 
+}
