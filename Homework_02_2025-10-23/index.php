@@ -29,17 +29,7 @@
         </section>
 
         <section id="services" class="services">
-            <h2>Our Services</h2>
-            <?php require_once 'components/services.php'; ?>
-            <div class="service-grid">
-                <?php foreach ($services as $service): ?>
-                    <div class="service-card">
-                        <img src="<?= $service['image']; ?>" alt="<?= $service['alt']; ?>">
-                        <h3><?= $service['title']; ?></h3>
-                        <p><?= $service['description']; ?></p>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+             <?php require_once 'components/services.php'; ?>
         </section>
 
         <section id="about" class="about">

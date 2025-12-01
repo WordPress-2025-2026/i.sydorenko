@@ -27,5 +27,14 @@ $services = [
 
 ]; ?>
 
-
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <?php foreach ($services as $service): ?>
+                    <div class="service-card">
+                        <img src="<?= $service['image']; ?>" alt="<?= $service['alt']; ?>">
+                        <h3><?= $service['title']; ?></h3>
+                        <p><?= $service['description']; ?></p>
+                    </div>
+                <?php endforeach; ?>
+            </div>
 
